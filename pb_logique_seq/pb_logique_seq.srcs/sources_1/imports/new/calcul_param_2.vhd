@@ -50,13 +50,19 @@ architecture Behavioral of calcul_param_2 is
 ---------------------------------------------------------------------------------
 -- Signaux
 ----------------------------------------------------------------------------------
-    
-
+ --signal i_ech_s : std_logic_vector (23 downto 0);
+ --signal o_param_s : std_logic_vector (7 downto 0);
+ 
 ---------------------------------------------------------------------------------------------
 --    Description comportementale
 ---------------------------------------------------------------------------------------------
 begin 
+--process(i_reset, i_bclk)
 
-     o_param <= x"02";    -- temporaire ...
+o_param <= x"02";    -- temporaire ...
+
+--end process;
+
+
 
 end Behavioral;

@@ -1,0 +1,1157 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 4860
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon May 23 12:48:25 EDT 2022
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	antho
+User home directory: C:/Users/antho
+User working directory: C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq
+User country: 	CA
+User language: 	fr
+User locale: 	fr_CA
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/antho/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/antho/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/antho/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/vivado.log
+Vivado journal file location: 	C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/vivado.jou
+Engine tmp dir: 	C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/.Xil/Vivado-4860-ThinkPad-Antho
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_SDK: C:/Xilinx/Vitis/2020.2
+XILINX_VITIS: C:/Xilinx/Vitis/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,041 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 81 MB (+82167kb) [00:00:17]
+// [Engine Memory]: 1,041 MB (+939829kb) [00:00:17]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\antho\Documents\Programmes\S4APP2\pb_logique_seq\pb_logique_seq.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,041 MB. GUI used memory: 52 MB. Current time: 5/23/22, 12:48:26 PM EDT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 102 MB (+18032kb) [00:00:30]
+// [GUI Memory]: 107 MB (+4kb) [00:00:32]
+// WARNING: HEventQueue.dispatchEvent() is taking  5065 ms.
+// Tcl Message: open_project C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:17 . Memory (MB): peak = 1076.531 ; gain = 0.000 
+// Project name: pb_logique_seq; location: C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bz
+// [GUI Memory]: 113 MB (+567kb) [00:00:37]
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// [GUI Memory]: 123 MB (+4611kb) [00:02:04]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 143 MB (+14208kb) [00:02:06]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 396 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ah
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// d (cr): Settings: addNotify
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Colors]", 9, true); // B - Node
+selectComboBox(PAResourceQtoS.SettingsThemePanel_SELECT_COLORS_AND_FONT_THAT_HAVE, "Dracula", 2); // D
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Settings"); // d
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2254 ms. Increasing delay to 6762 ms.
+// [GUI Memory]: 154 MB (+4245kb) [00:08:31]
+// PAPropertyPanels.initPanels (calcul_param_1.vhd) elapsed time: 0.2s
+// Elapsed time: 122 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, calcul_param_1(Behavioral) (calcul_param_1.vhd)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, calcul_param_1(Behavioral) (calcul_param_1.vhd)]", 8, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, calcul_param_2(Behavioral) (calcul_param_2.vhd)]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, calcul_param_2(Behavioral) (calcul_param_2.vhd)]", 9, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("calcul_param_2.vhd", 46, 325); // bP
+selectCodeEditor("calcul_param_2.vhd", 8, 330); // bP
+// Elapsed time: 126 seconds
+selectCodeEditor("calcul_param_2.vhd", 39, 432); // bP
+// Elapsed time: 75 seconds
+selectCodeEditor("calcul_param_2.vhd", 110, 314); // bP
+selectCodeEditor("calcul_param_2.vhd", 72, 326); // bP
+selectCodeEditor("calcul_param_2.vhd", 4, 336); // bP
+selectCodeEditor("calcul_param_2.vhd", 0, 334); // bP
+// Elapsed time: 204 seconds
+selectCodeEditor("calcul_param_2.vhd", 65, 329); // bP
+selectCodeEditor("calcul_param_2.vhd", 43, 435); // bP
+// Elapsed time: 85 seconds
+selectCodeEditor("calcul_param_2.vhd", 108, 397); // bP
+selectCodeEditor("calcul_param_2.vhd", 92, 365); // bP
+selectCodeEditor("calcul_param_2.vhd", 4, 455); // bP
+// Elapsed time: 21 seconds
+selectCodeEditor("calcul_param_2.vhd", 10, 391); // bP
+selectCodeEditor("calcul_param_2.vhd", 16, 374); // bP
+selectCodeEditor("calcul_param_2.vhd", 17, 396); // bP
+selectCodeEditor("calcul_param_2.vhd", 17, 396); // bP
+selectCodeEditor("calcul_param_2.vhd", 143, 376); // bP
+selectCodeEditor("calcul_param_2.vhd", 254, 364); // bP
+typeControlKey((HResource) null, "calcul_param_2.vhd", 'v'); // bP
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 24 seconds
+selectCodeEditor("calcul_param_2.vhd", 61, 113); // bP
+selectCodeEditor("calcul_param_2.vhd", 61, 113, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "calcul_param_2.vhd", 'c'); // bP
+selectCodeEditor("calcul_param_2.vhd", 54, 441); // bP
+selectCodeEditor("calcul_param_2.vhd", 54, 441, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "calcul_param_2.vhd", 'v'); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("calcul_param_2.vhd", 85, 289); // bP
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 99 seconds
+selectCodeEditor("calcul_param_2.vhd", 146, 301); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("calcul_param_2.vhd", 347, 316); // bP
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectCodeEditor("calcul_param_2.vhd", 148, 111); // bP
+typeControlKey((HResource) null, "calcul_param_2.vhd", 'c'); // bP
+selectCodeEditor("calcul_param_2.vhd", 311, 316); // bP
+typeControlKey((HResource) null, "calcul_param_2.vhd", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("calcul_param_2.vhd", 79, 316); // bP
+selectCodeEditor("calcul_param_2.vhd", 79, 316, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "calcul_param_2.vhd", 'c'); // bP
+selectCodeEditor("calcul_param_2.vhd", 61, 456); // bP
+selectCodeEditor("calcul_param_2.vhd", 61, 456, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "calcul_param_2.vhd", 'v'); // bP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 22 seconds
+selectCodeEditor("calcul_param_2.vhd", 133, 437); // bP
+typeControlKey((HResource) null, "calcul_param_2.vhd", 'c'); // bP
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "calcul_param_2.vhd", 'v'); // bP
+// Elapsed time: 68 seconds
+selectCodeEditor("calcul_param_2.vhd", 365, 319); // bP
+selectCodeEditor("calcul_param_2.vhd", 7, 304); // bP
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("calcul_param_2.vhd", 130, 452); // bP
+// Elapsed time: 27 seconds
+selectCodeEditor("calcul_param_2.vhd", 24, 368); // bP
+// TclEventType: DG_GRAPH_STALE
+// RDIResource.RDIViews_PROPERTIES: Source File Properties: close view
+// Elapsed time: 145 seconds
+selectCodeEditor("calcul_param_2.vhd", 0, 367); // bP
+selectCodeEditor("calcul_param_2.vhd", 0, 367); // bP
+selectCodeEditor("calcul_param_2.vhd", 26, 405); // bP
+selectCodeEditor("calcul_param_2.vhd", 197, 446); // bP
+selectCodeEditor("calcul_param_2.vhd", 197, 435); // bP
+typeControlKey((HResource) null, "calcul_param_2.vhd", 'v'); // bP
+selectCodeEditor("calcul_param_2.vhd", 130, 423); // bP
+selectCodeEditor("calcul_param_2.vhd", 3, 366); // bP
+selectCodeEditor("calcul_param_2.vhd", 4, 366); // bP
+selectCodeEditor("calcul_param_2.vhd", 109, 370); // bP
+selectCodeEditor("calcul_param_2.vhd", 18, 355, false, false, false, true, false); // bP - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ak
+selectCodeEditor("calcul_param_2.vhd", 209, 360); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("calcul_param_2.vhd", 83, 386); // bP
+selectCodeEditor("calcul_param_2.vhd", 64, 404); // bP
+selectCodeEditor("calcul_param_2.vhd", 177, 372); // bP
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "calcul_param_1.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "calcul_param_2.vhd", 2); // m
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, simul_module_sig_tb(Behavioral) (simul_module_sig_tb.vhd)]", 5); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, simul_module_sig_tb(Behavioral) (simul_module_sig_tb.vhd)]", 5); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, circuit_tr_signal(STRUCTURE) (circuit_tr_signal.vhd)]", 6); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, circuit_tr_signal(STRUCTURE) (circuit_tr_signal.vhd)]", 6); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, module_commande_tb(Behavioral) (module_commande_tb.vhd)]", 7); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, module_commande_tb(Behavioral) (module_commande_tb.vhd)]", 7); // D
+// Elapsed time: 27 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, simul_module_sig_tb(Behavioral) (simul_module_sig_tb.vhd)]", 5); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, simul_module_sig_tb(Behavioral) (simul_module_sig_tb.vhd)]", 5); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 22); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 4); // D
+selectCodeEditor("calcul_param_2.vhd", 279, 435); // bP
+selectCodeEditor("calcul_param_2.vhd", 222, 403); // bP
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("calcul_param_2.vhd", 222, 403); // bP
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: update_module_reference design_1_calcul_param_2_0_0 
+// bz (cr):  Refresh Changed Modules : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'i_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Reading block design file <C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  3003 ms.
+// TclEventType: RSB_OPEN_DIAGRAM
+// Elapsed time: 68 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: Upgrading 'C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd' 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded design_1_calcul_param_2_0_0 from calcul_param_2_v1_0 1.0 to calcul_param_2_v1_0 1.0 
+// Tcl Message: Wrote  : <C:\Users\antho\Documents\Programmes\S4APP2\pb_logique_seq\pb_logique_seq.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_a93fd001.ui>  
+// Tcl Message: upgrade_ip: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1216.910 ; gain = 140.379 update_module_reference: Time (s): cpu = 00:00:21 ; elapsed = 00:01:10 . Memory (MB): peak = 1216.910 ; gain = 140.379 
+dismissDialog("Refresh Changed Modules"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 86 MB. Current time: 5/23/22, 1:18:26 PM EDT
+// Elapsed time: 206 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, simul_module_sig_tb(Behavioral) (simul_module_sig_tb.vhd)]", 4); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, simul_module_sig_tb(Behavioral) (simul_module_sig_tb.vhd), UUT_mod_sig : design_1 (design_1.bd)]", 6); // D
+// RDIResource.RDIViews_PROPERTIES: Properties: close view
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, simul_module_sig_tb(Behavioral) (simul_module_sig_tb.vhd), UUT_mod_sig : design_1 (design_1.bd), design_1_calcul_param_2_0_0 (Module Reference Wrapper)]", 9); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, simul_module_sig_tb(Behavioral) (simul_module_sig_tb.vhd), UUT_mod_sig : design_1 (design_1.bd), design_1_calcul_param_2_0_0 (Module Reference Wrapper)]", 9); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, simul_module_sig_tb(Behavioral) (simul_module_sig_tb.vhd), UUT_mod_sig : design_1 (design_1.bd)]", 6, true); // D - Node
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "calcul_param_2.vhd", 2); // m
+selectCodeEditor("calcul_param_2.vhd", 15, 354); // bP
+selectCodeEditor("calcul_param_2.vhd", 107, 331); // bP
+selectCodeEditor("calcul_param_2.vhd", 294, 389); // bP
+typeControlKey((HResource) null, "calcul_param_2.vhd", 'v'); // bP
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h
+// TclEventType: IP_LOCK_CHANGE
+// bz (cr):  Refresh Changed Modules : addNotify
+// Tcl Message: update_module_reference design_1_calcul_param_2_0_0 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: ERROR: [filemgmt 56-189] Failed to resolve reference. Nothing was found in the project to match the name 'calcul_param_2'. 
+// Tcl Message: update_module_reference: Time (s): cpu = 00:00:01 ; elapsed = 00:00:25 . Memory (MB): peak = 1235.309 ; gain = 14.234 
+// Tcl Message: ERROR: [Common 17-39] 'update_module_reference' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'update_module_reference' failed due to earlier errors.  
+// a (cr): Critical Messages: addNotify
+// Elapsed time: 24 seconds
+dismissDialog("Refresh Changed Modules"); // bz
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 234 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+// Elapsed time: 100 seconds
+selectCodeEditor("calcul_param_2.vhd", 274, 416); // bP
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k
+closeTask("IP Integrator", "Block Design", "DesignTask.IP_INTEGRATOR");
+// A (cr): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Close Block Designs : addNotify
+// TclEventType: RSB_CLOSE_DIAGRAM
+dismissDialog("Confirm Close"); // A
+// WARNING: HEventQueue.dispatchEvent() is taking  2013 ms.
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: close_bd_design [get_bd_designs design_1] 
+// Tcl Message: Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_a93fd001.ui>  
+dismissDialog("Close Block Designs"); // bz
+selectCodeEditor("calcul_param_2.vhd", 270, 415); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("calcul_param_2.vhd", 289, 415); // bP
+selectCodeEditor("calcul_param_2.vhd", 289, 415); // bP
+selectCodeEditor("calcul_param_2.vhd", 289, 415, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("calcul_param_2.vhd", 165, 422); // bP
+selectCodeEditor("calcul_param_2.vhd", 62, 77); // bP
+selectCodeEditor("calcul_param_2.vhd", 62, 77, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "calcul_param_2.vhd", 'c'); // bP
+selectCodeEditor("calcul_param_2.vhd", 62, 77, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("calcul_param_2.vhd", 62, 77); // bP
+selectCodeEditor("calcul_param_2.vhd", 62, 77, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "calcul_param_2.vhd", 'c'); // bP
+// Elapsed time: 837 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, simul_module_sig_tb(Behavioral) (simul_module_sig_tb.vhd)]", 5); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, calcul_param_3(Behavioral) (calcul_param_3.vhd)]", 10, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, calcul_param_3(Behavioral) (calcul_param_3.vhd)]", 10, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "calcul_param_2.vhd", 2); // m
+// Run Command: PAResourceCommand.PACommandNames_PRINT
+// 'aI' command handler elapsed time: 5 seconds
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 83 MB. Current time: 5/23/22, 1:48:26 PM EDT
+// Elapsed time: 1690 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 80 MB. Current time: 5/23/22, 2:18:27 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 78 MB. Current time: 5/23/22, 2:48:27 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 79 MB. Current time: 5/23/22, 3:18:27 PM EDT
+// Elapsed time: 4026 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, reg_dec_24b(Behavioral) (reg_dec_24b.vhd)]", 18, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, reg_dec_24b(Behavioral) (reg_dec_24b.vhd)]", 18, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 157 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, reg_dec_24b_fd(Behavioral) (reg_dec_24b_fd.vhd)]", 19, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, reg_dec_24b_fd(Behavioral) (reg_dec_24b_fd.vhd)]", 19, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "reg_dec_24b.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "reg_dec_24b_fd.vhd", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "reg_dec_24b.vhd", 3); // m
+// Elapsed time: 60 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "reg_dec_24b_fd.vhd", 4); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 81 MB. Current time: 5/23/22, 3:48:28 PM EDT
+// Elapsed time: 2461 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, reg_24b(Behavioral) (reg_24b.vhd)]", 17, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, reg_24b(Behavioral) (reg_24b.vhd)]", 17, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, reg_24b(Behavioral) (reg_24b.vhd)]", 17, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, reg_24b(Behavioral) (reg_24b.vhd)]", 17, false); // D
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 80 MB. Current time: 5/23/22, 4:18:28 PM EDT
+// Elapsed time: 1225 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 4); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, calcul_param_2.vhd]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, calcul_param_2.vhd]", 5, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("calcul_param_2.vhd", 128, 460); // bP
+selectCodeEditor("calcul_param_2.vhd", 128, 460); // bP
+selectCodeEditor("calcul_param_2.vhd", 128, 460); // bP
+selectCodeEditor("calcul_param_2.vhd", 128, 460, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("calcul_param_2.vhd", 127, 460); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 91 seconds
+selectCodeEditor("calcul_param_2.vhd", 330, 411); // bP
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h
+// Tcl Message: update_module_reference design_1_calcul_param_2_0_0 
+// bz (cr):  Refresh Changed Modules : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'i_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  3822 ms.
+// TclEventType: RSB_OPEN_DIAGRAM
+// Elapsed time: 20 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Upgrading 'C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd' 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded design_1_calcul_param_2_0_0 from calcul_param_2_v1_0 1.0 to calcul_param_2_v1_0 1.0 
+// Tcl Message: Wrote  : <C:\Users\antho\Documents\Programmes\S4APP2\pb_logique_seq\pb_logique_seq.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_a93fd001.ui>  
+// Tcl Message: upgrade_ip: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1241.973 ; gain = 4.645 update_module_reference: Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1241.973 ; gain = 4.645 
+dismissDialog("Refresh Changed Modules"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bz (cr):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd} 
+dismissDialog("Open Block Design"); // bz
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ah
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/schema.tcl");
+// Source Tcl File: 'C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/schema.tcl'
+// Tcl Command: 'source C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/schema.tcl'
+// bz (cr):  Source Tcl Script : addNotify
+// TclEventType: HIGHLIGHT_ADD
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: source C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/schema.tcl 
+dismissDialog("Source Tcl Script"); // bz
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (i_dat_right) elapsed time: 0.2s
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cr): Re-customize Module Reference: addNotify
+// Elapsed time: 331 seconds
+dismissDialog("Re-customize Module Reference"); // r
+// PAPropertyPanels.initPanels (module_commande_0_o_selection_fct) elapsed time: 0.2s
+// Elapsed time: 45 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 343, 437, 1286, 628, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_HIGHLIGHT_DEFAULT_COLOR, "Highlight (Default Color)"); // ak
+// Run Command: PAResourceCommand.PACommandNames_HIGHLIGHT_DEFAULT_COLOR
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 342, 469, 1286, 628, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenuItem((HResource) null, "Color 15"); // ak
+// Elapsed time: 38 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK
+// Elapsed time: 245 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, module_commande(BEHAVIOR) (module_commande.vhd)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, module_commande(BEHAVIOR) (module_commande.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, module_commande(BEHAVIOR) (module_commande.vhd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, module_commande(BEHAVIOR) (module_commande.vhd)]", 2); // D
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, module_commande(BEHAVIOR) (module_commande.vhd), inst_cond_btn : conditionne_btn_v7(Behavioral) (conditionne_btn_v7.vhd)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, module_commande(BEHAVIOR) (module_commande.vhd), inst_cond_btn : conditionne_btn_v7(Behavioral) (conditionne_btn_v7.vhd)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 10 seconds
+selectCodeEditor("conditionne_btn_v7.vhd", 229, 340); // bP
+selectCodeEditor("conditionne_btn_v7.vhd", 650, 329); // bP
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, module_commande(BEHAVIOR) (module_commande.vhd), inst_cond_btn : conditionne_btn_v7(Behavioral) (conditionne_btn_v7.vhd)]", 3); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, module_commande(BEHAVIOR) (module_commande.vhd), inst_cond_btn : conditionne_btn_v7(Behavioral) (conditionne_btn_v7.vhd), inst_strb_bit : strb_gen(Behavioral) (strb_gen_v3.vhd)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, module_commande(BEHAVIOR) (module_commande.vhd), inst_cond_btn : conditionne_btn_v7(Behavioral) (conditionne_btn_v7.vhd), inst_strb_bit : strb_gen(Behavioral) (strb_gen_v3.vhd)]", 4, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "conditionne_btn_v7.vhd", 7); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "module_commande.vhd", 6); // m
+// Run Command: PAResourceCommand.PACommandNames_PRINT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 90 MB. Current time: 5/23/22, 4:48:28 PM EDT
+// Elapsed time: 1238 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 90 MB. Current time: 5/23/22, 5:18:29 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 89 MB. Current time: 5/23/22, 5:48:29 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 88 MB. Current time: 5/23/22, 6:18:29 PM EDT
+// Elapsed time: 5376 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, module_commande(BEHAVIOR) (module_commande.vhd)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// Elapsed time: 36 seconds
+String[] filenames31467 = {"D:/APP2 S4/Adder_1bit.vhd", "D:/APP2 S4/Adder_8bit.vhd"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 44 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {{D:/APP2 S4/Adder_1bit.vhd} {D:/APP2 S4/Adder_8bit.vhd}} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 60 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+// Elapsed time: 21 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Add_24bits"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Tcl Command: 'file mkdir C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/new'
+dismissDialog("Create Source File"); // F
+// Tcl Message: file mkdir C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/new 
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 26 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/new/Add_24bits.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/new/Add_24bits.vhd 
+// I (cr): Define Module: addNotify
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 0, "in", 1); // ab
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "in", 0, "Direction", 1); // ab
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I
+// Elapsed time: 31 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Adder_8bit(Behavioral) (Adder_8bit.vhd)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Adder_8bit(Behavioral) (Adder_8bit.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Adder_8bit(Behavioral) (Adder_8bit.vhd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("Adder_8bit.vhd", 78, 269); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+selectCodeEditor("Adder_8bit.vhd", 339, 317); // bP
+// Elapsed time: 32 seconds
+typeControlKey((HResource) null, "Adder_8bit.vhd", 'c'); // bP
+typeControlKey((HResource) null, "Adder_8bit.vhd", 'v'); // bP
+selectCodeEditor("Adder_8bit.vhd", 258, 302); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Adder_8bit.vhd", 124, 367); // bP
+selectCodeEditor("Adder_8bit.vhd", 51, 402); // bP
+selectCodeEditor("Adder_8bit.vhd", 51, 402, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Adder_8bit.vhd", 132, 400); // bP
+selectCodeEditor("Adder_8bit.vhd", 132, 400, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Adder_8bit.vhd", 132, 400); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("Adder_8bit.vhd", 82, 95); // bP
+selectCodeEditor("Adder_8bit.vhd", 82, 95, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "Adder_8bit.vhd", 'c'); // bP
+selectCodeEditor("Adder_8bit.vhd", 86, 217); // bP
+typeControlKey((HResource) null, "Adder_8bit.vhd", 'v'); // bP
+selectCodeEditor("Adder_8bit.vhd", 159, 250); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("Adder_8bit.vhd", 54, 433); // bP
+selectCodeEditor("Adder_8bit.vhd", 54, 433, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Adder_8bit.vhd", 156, 436); // bP
+selectCodeEditor("Adder_8bit.vhd", 156, 436, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Adder_8bit.vhd", 106, 439); // bP
+selectCodeEditor("Adder_8bit.vhd", 106, 439, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Adder_8bit.vhd", 156, 436); // bP
+selectCodeEditor("Adder_8bit.vhd", 47, 265); // bP
+selectCodeEditor("Adder_8bit.vhd", 47, 265, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Adder_8bit.vhd", 139, 436); // bP
+selectCodeEditor("Adder_8bit.vhd", 94, 395); // bP
+selectCodeEditor("Adder_8bit.vhd", 94, 395, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Adder_8bit.vhd", 119, 433); // bP
+selectCodeEditor("Adder_8bit.vhd", 124, 451); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("Adder_8bit.vhd", 49, 321); // bP
+selectCodeEditor("Adder_8bit.vhd", 49, 321, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Adder_8bit.vhd", 86, 77); // bP
+selectCodeEditor("Adder_8bit.vhd", 86, 77, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "Adder_8bit.vhd", 'c'); // bP
+selectCodeEditor("Adder_8bit.vhd", 35, 447); // bP
+selectCodeEditor("Adder_8bit.vhd", 158, 419); // bP
+typeControlKey((HResource) null, "Adder_8bit.vhd", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Adder_8bit.vhd", 170, 403); // bP
+selectCodeEditor("Adder_8bit.vhd", 25, 464); // bP
+selectCodeEditor("Adder_8bit.vhd", 19, 455); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("Adder_8bit.vhd", 118, 400); // bP
+typeControlKey((HResource) null, "Adder_8bit.vhd", 'c'); // bP
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Adder_8bit(Behavioral) (Adder_8bit.vhd)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Adder_8bit(Behavioral) (Adder_8bit.vhd), A_0 : Adder_1bit(Behavioral) (Adder_1bit.vhd)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Adder_8bit(Behavioral) (Adder_8bit.vhd), A_0 : Adder_1bit(Behavioral) (Adder_1bit.vhd)]", 3, false, false, false, false, false, true); // D - Double Click
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 10 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Adder_8bit(Behavioral) (Adder_8bit.vhd)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Add_24bits(Behavioral) (Add_24bits.vhd)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Add_24bits(Behavioral) (Add_24bits.vhd)]", 4, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("Add_24bits.vhd", 42, 485); // bP
+selectCodeEditor("Add_24bits.vhd", 53, 416); // bP
+typeControlKey((HResource) null, "Add_24bits.vhd", 'v'); // bP
+selectCodeEditor("Add_24bits.vhd", 337, 351); // bP
+selectCodeEditor("Add_24bits.vhd", 117, 385); // bP
+selectCodeEditor("Add_24bits.vhd", 221, 383); // bP
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Adder_8bit.vhd", 9); // m
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("Adder_8bit.vhd", 124, 285); // bP
+typeControlKey((HResource) null, "Adder_8bit.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Add_24bits.vhd", 11); // m
+selectCodeEditor("Add_24bits.vhd", 131, 199); // bP
+selectCodeEditor("Add_24bits.vhd", 4, 198); // bP
+typeControlKey((HResource) null, "Add_24bits.vhd", 'v'); // bP
+selectCodeEditor("Add_24bits.vhd", 190, 202); // bP
+selectCodeEditor("Add_24bits.vhd", 220, 317); // bP
+selectCodeEditor("Add_24bits.vhd", 88, 195); // bP
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("Add_24bits.vhd", 79, 284); // bP
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("Add_24bits.vhd", 378, 264); // bP
+selectCodeEditor("Add_24bits.vhd", 41, 297); // bP
+selectCodeEditor("Add_24bits.vhd", 41, 297); // bP
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Add_24bits.vhd", 156, 295); // bP
+selectCodeEditor("Add_24bits.vhd", 34, 292); // bP
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Adder_8bit.vhd", 9); // m
+selectCodeEditor("Adder_8bit.vhd", 91, 242); // bP
+selectCodeEditor("Adder_8bit.vhd", 73, 246); // bP
+selectCodeEditor("Adder_8bit.vhd", 352, 235); // bP
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Adder_8bit.vhd", 28, 318); // bP
+selectCodeEditor("Adder_8bit.vhd", 126, 485); // bP
+selectCodeEditor("Adder_8bit.vhd", 187, 319); // bP
+selectCodeEditor("Adder_8bit.vhd", 186, 148); // bP
+selectCodeEditor("Adder_8bit.vhd", 192, 318); // bP
+selectCodeEditor("Adder_8bit.vhd", 124, 504); // bP
+selectCodeEditor("Adder_8bit.vhd", 104, 457); // bP
+selectCodeEditor("Adder_8bit.vhd", 110, 452); // bP
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("Adder_8bit.vhd", 118, 450); // bP
+selectCodeEditor("Adder_8bit.vhd", 117, 504); // bP
+selectCodeEditor("Adder_8bit.vhd", 136, 180); // bP
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Adder_1bit.vhd", 10); // m
+selectCodeEditor("Adder_1bit.vhd", 75, 363); // bP
+selectCodeEditor("Adder_1bit.vhd", 247, 351); // bP
+selectCodeEditor("Adder_1bit.vhd", 205, 366); // bP
+selectCodeEditor("Adder_1bit.vhd", 205, 366); // bP
+selectCodeEditor("Adder_1bit.vhd", 112, 461); // bP
+selectCodeEditor("Adder_1bit.vhd", 66, 363); // bP
+selectCodeEditor("Adder_1bit.vhd", 66, 363, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Adder_1bit.vhd", 96, 368); // bP
+selectCodeEditor("Adder_1bit.vhd", 31, 366); // bP
+selectCodeEditor("Adder_1bit.vhd", 31, 366, false, false, false, false, true); // bP - Double Click
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 79 seconds
+selectCodeEditor("Adder_1bit.vhd", 70, 364); // bP
+selectCodeEditor("Adder_1bit.vhd", 70, 364, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Adder_1bit.vhd", 186, 361); // bP
+selectCodeEditor("Adder_1bit.vhd", 207, 401); // bP
+selectCodeEditor("Adder_1bit.vhd", 77, 451); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("Adder_1bit.vhd", 63, 367); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("Adder_1bit.vhd", 130, 215); // bP
+selectCodeEditor("Adder_1bit.vhd", 123, 367); // bP
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Adder_8bit.vhd", 9); // m
+selectCodeEditor("Adder_8bit.vhd", 247, 211); // bP
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:\Users\antho\Documents\Programmes\S4APP2\pb_logique_seq\pb_logique_seq.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_a93fd001.ui>  
+selectCodeEditor("Adder_8bit.vhd", 123, 416); // bP
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Adder_8bit.vhd", 180, 325); // bP
+selectCodeEditor("Adder_8bit.vhd", 160, 162); // bP
+selectCodeEditor("Adder_8bit.vhd", 197, 124); // bP
+selectCodeEditor("Adder_8bit.vhd", 197, 124, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("Adder_8bit.vhd", 124, 455); // bP
+selectCodeEditor("Adder_8bit.vhd", 155, 437); // bP
+selectCodeEditor("Adder_8bit.vhd", 155, 437, false, false, false, false, true); // bP - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Adder_1bit.vhd", 10); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Add_24bits.vhd", 11); // m
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("Add_24bits.vhd", 186, 389); // bP
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Add_24bits.vhd", 221, 340); // bP
+selectCodeEditor("Add_24bits.vhd", 167, 384); // bP
+selectCodeEditor("Add_24bits.vhd", 39, 444); // bP
+selectCodeEditor("Add_24bits.vhd", 87, 190); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Adder_8bit.vhd", 10); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Add_24bits.vhd", 11); // m
+selectCodeEditor("Add_24bits.vhd", 47, 323); // bP
+selectCodeEditor("Add_24bits.vhd", 69, 380); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Adder_8bit.vhd", 10); // m
+selectCodeEditor("Adder_8bit.vhd", 178, 346); // bP
+selectCodeEditor("Adder_8bit.vhd", 326, 163); // bP
+typeControlKey((HResource) null, "Adder_8bit.vhd", 'c'); // bP
+// Elapsed time: 50 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Add_24bits.vhd", 11); // m
+selectCodeEditor("Add_24bits.vhd", 96, 433); // bP
+selectCodeEditor("Add_24bits.vhd", 72, 444); // bP
+typeControlKey((HResource) null, "Add_24bits.vhd", 'v'); // bP
+selectCodeEditor("Add_24bits.vhd", 57, 455); // bP
+selectCodeEditor("Add_24bits.vhd", 243, 451); // bP
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Add_24bits.vhd", 54, 451); // bP
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Adder_8bit.vhd", 10); // m
+selectCodeEditor("Adder_8bit.vhd", 29, 403); // bP
+typeControlKey((HResource) null, "Adder_8bit.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Add_24bits.vhd", 11); // m
+selectCodeEditor("Add_24bits.vhd", 73, 464); // bP
+typeControlKey((HResource) null, "Add_24bits.vhd", 'v'); // bP
+selectCodeEditor("Add_24bits.vhd", 21, 399); // bP
+selectCodeEditor("Add_24bits.vhd", 85, 400); // bP
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("Add_24bits.vhd", 34, 301); // bP
+selectCodeEditor("Add_24bits.vhd", 34, 301, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Add_24bits.vhd", 39, 387); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("Add_24bits.vhd", 160, 451); // bP
+selectCodeEditor("Add_24bits.vhd", 315, 281); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Adder_8bit.vhd", 10); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Add_24bits.vhd", 11); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Adder_8bit.vhd", 10); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Add_24bits.vhd", 11); // m
+selectCodeEditor("Add_24bits.vhd", 99, 413); // bP
+selectCodeEditor("Add_24bits.vhd", 87, 249); // bP
+selectCodeEditor("Add_24bits.vhd", 87, 249, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Add_24bits.vhd", 86, 215); // bP
+selectCodeEditor("Add_24bits.vhd", 86, 215, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "Add_24bits.vhd", 'c'); // bP
+selectCodeEditor("Add_24bits.vhd", 85, 383); // bP
+typeControlKey((HResource) null, "Add_24bits.vhd", 'v'); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("Add_24bits.vhd", 130, 429); // bP
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("Add_24bits.vhd", 34, 476); // bP
+selectCodeEditor("Add_24bits.vhd", 34, 468); // bP
+selectCodeEditor("Add_24bits.vhd", 34, 468); // bP
+typeControlKey((HResource) null, "Add_24bits.vhd", 'c'); // bP
+selectCodeEditor("Add_24bits.vhd", 273, 114); // bP
+// Elapsed time: 23 seconds
+selectCodeEditor("Add_24bits.vhd", 281, 180); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Adder_8bit.vhd", 10); // m
+selectCodeEditor("Adder_8bit.vhd", 303, 213); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Add_24bits.vhd", 11); // m
+selectCodeEditor("Add_24bits.vhd", 103, 388); // bP
+selectCodeEditor("Add_24bits.vhd", 105, 403); // bP
+selectCodeEditor("Add_24bits.vhd", 209, 388); // bP
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Add_24bits.vhd", 100, 437); // bP
+selectCodeEditor("Add_24bits.vhd", 144, 195); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Adder_8bit.vhd", 10); // m
+selectCodeEditor("Adder_8bit.vhd", 179, 165); // bP
+selectCodeEditor("Adder_8bit.vhd", 179, 165, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Adder_8bit.vhd", 117, 165); // bP
+selectCodeEditor("Adder_8bit.vhd", 113, 165); // bP
+typeControlKey((HResource) null, "Adder_8bit.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Add_24bits.vhd", 11); // m
+selectCodeEditor("Add_24bits.vhd", 64, 351); // bP
+selectCodeEditor("Add_24bits.vhd", 146, 350); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Adder_8bit.vhd", 10); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Add_24bits.vhd", 11); // m
+typeControlKey((HResource) null, "Add_24bits.vhd", 'v'); // bP
+typeControlKey((HResource) null, "Add_24bits.vhd", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 21 seconds
+selectCodeEditor("Add_24bits.vhd", 355, 398); // bP
+selectCodeEditor("Add_24bits.vhd", 107, 436); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("Add_24bits.vhd", 218, 432); // bP
+selectCodeEditor("Add_24bits.vhd", 23, 472); // bP
+typeControlKey((HResource) null, "Add_24bits.vhd", 'c'); // bP
+selectCodeEditor("Add_24bits.vhd", 61, 495); // bP
+// TclEventType: DG_GRAPH_STALE
+typeControlKey((HResource) null, "Add_24bits.vhd", 'v'); // bP
+selectCodeEditor("Add_24bits.vhd", 30, 402); // bP
+selectCodeEditor("Add_24bits.vhd", 103, 436); // bP
+selectCodeEditor("Add_24bits.vhd", 167, 433); // bP
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 92 MB. Current time: 5/23/22, 6:48:29 PM EDT
+// Elapsed time: 26 seconds
+selectCodeEditor("Add_24bits.vhd", 130, 354); // bP
+selectCodeEditor("Add_24bits.vhd", 130, 354, false, false, false, false, true); // bP - Double Click
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("Add_24bits.vhd", 203, 354); // bP
+typeControlKey((HResource) null, "Add_24bits.vhd", 'c'); // bP
+selectCodeEditor("Add_24bits.vhd", 98, 465); // bP
+typeControlKey((HResource) null, "Add_24bits.vhd", 'v'); // bP
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Add_24bits.vhd", 197, 494); // bP
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("Add_24bits.vhd", 33, 487); // bP
+typeControlKey((HResource) null, "Add_24bits.vhd", 'c'); // bP
+selectCodeEditor("Add_24bits.vhd", 32, 487); // bP
+typeControlKey((HResource) null, "Add_24bits.vhd", 'v'); // bP
+selectCodeEditor("Add_24bits.vhd", 25, 398); // bP
+selectCodeEditor("Add_24bits.vhd", 110, 437); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("Add_24bits.vhd", 132, 470); // bP
+selectCodeEditor("Add_24bits.vhd", 165, 345); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("Add_24bits.vhd", 245, 301); // bP
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Add_24bits.vhd", 333, 318); // bP
+selectCodeEditor("Add_24bits.vhd", 50, 178); // bP
+selectCodeEditor("Add_24bits.vhd", 50, 178, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Add_24bits.vhd", 50, 178); // bP
+selectCodeEditor("Add_24bits.vhd", 94, 179); // bP
+selectCodeEditor("Add_24bits.vhd", 94, 179, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "Add_24bits.vhd", 'c'); // bP
+selectCodeEditor("Add_24bits.vhd", 152, 469); // bP
+selectCodeEditor("Add_24bits.vhd", 152, 469, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "Add_24bits.vhd", 'v'); // bP
+selectCodeEditor("Add_24bits.vhd", 167, 434); // bP
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 23 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Add_24bits(Behavioral) (Add_24bits.vhd)]", 2); // D
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Adder_8bit.vhd", 10); // m
+selectCodeEditor("Adder_8bit.vhd", 266, 212); // bP
+selectCodeEditor("Adder_8bit.vhd", 242, 359); // bP
+// Elapsed time: 27 seconds
+selectCodeEditor("Adder_8bit.vhd", 114, 451); // bP
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Add_24bits.vhd", 11); // m
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Add_24bits(Behavioral) (Add_24bits.vhd), A8_2 : Adder_8bit(Behavioral) (Adder_8bit.vhd)]", 5); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Add_24bits(Behavioral) (Add_24bits.vhd), A8_2 : Adder_8bit(Behavioral) (Adder_8bit.vhd)]", 5); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Add_24bits(Behavioral) (Add_24bits.vhd), A8_1 : Adder_8bit(Behavioral) (Adder_8bit.vhd)]", 4); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Add_24bits(Behavioral) (Add_24bits.vhd), A8_1 : Adder_8bit(Behavioral) (Adder_8bit.vhd)]", 4); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Add_24bits(Behavioral) (Add_24bits.vhd), A8_0 : Adder_8bit(Behavioral) (Adder_8bit.vhd)]", 3); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Add_24bits(Behavioral) (Add_24bits.vhd), A8_0 : Adder_8bit(Behavioral) (Adder_8bit.vhd)]", 3); // D
+selectCodeEditor("Add_24bits.vhd", 330, 213); // bP
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Add_24bits(Behavioral) (Add_24bits.vhd)]", 2); // D
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: generate_target Simulation [get_files C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd] 
+// Tcl Message: Wrote  : <C:\Users\antho\Documents\Programmes\S4APP2\pb_logique_seq\pb_logique_seq.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_a93fd001.ui>  
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// Tcl Message: INFO: [Common 17-365] Interrupt caught but 'generate_target' cannot be canceled. Please wait for command to finish. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: VHDL Output written to : c:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/synth/design_1.vhd VHDL Output written to : c:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/sim/design_1.vhd VHDL Output written to : c:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_a93fd001.ui>  
+// Tcl Message: INFO: [BD 41-1171] User-interrupt detected : Generation halted successfully for IP Integrator design C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd INFO: [Common 17-681] Processing pending cancel. 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Elapsed time: 25 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block M6_parametre_2 . 
+// Tcl Message: Exporting to file c:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file c:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File c:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.sim/sim_1/behav/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-7] Finding pre-compiled libraries... INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.sim/sim_1/behav/xsim' INFO: [SIM-utils-54] Inspecting design source files for 'simul_module_sig_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... 
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj simul_module_sig_tb_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1515.953 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '10' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto ae302d5aa3284400815652c101d33dae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L util_vector_logic_v2_0_1 -L xlconcat_v2_1_4 -L xlconstant_v1_1_7 -L xlslice_v1_0_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simul_module_sig_tb_behav xil_defaultlib.simul_module_sig_tb xil_defaultlib.glbl -log elaborate.log" 
+// Tcl Message: Vivado Simulator 2020.2 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ae302d5aa3284400815652c101d33dae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L util_vector_logic_v2_0_1 -L xlconcat_v2_1_4 -L xlconstant_v1_1_7 -L xlslice_v1_0_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simul_module_sig_tb_behav xil_defaultlib.simul_module_sig_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration Pass Through NonSizing Optimizer 
+// Tcl Message: Built simulation snapshot simul_module_sig_tb_behav 
