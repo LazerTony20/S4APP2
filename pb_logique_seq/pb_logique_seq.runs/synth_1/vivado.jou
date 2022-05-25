@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 24 15:48:41 2022
+# Process ID: 15796
+# Current directory: C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.runs/synth_1
+# Command line: vivado.exe -log Carre_24bits.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Carre_24bits.tcl
+# Log file: C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.runs/synth_1/Carre_24bits.vds
+# Journal file: C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Carre_24bits.tcl -notrace

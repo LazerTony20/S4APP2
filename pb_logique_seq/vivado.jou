@@ -2,29 +2,13 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon May 23 18:59:39 2022
-# Process ID: 8824
+# Start of session at: Wed May 25 10:40:18 2022
+# Process ID: 10764
 # Current directory: C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1484 C:\Users\antho\Documents\Programmes\S4APP2\pb_logique_seq\pb_logique_seq.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16664 C:\Users\antho\Documents\Programmes\S4APP2\pb_logique_seq\pb_logique_seq.xpr
 # Log file: C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/vivado.log
 # Journal file: C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.xpr
 update_compile_order -fileset sources_1
-update_files -from_files C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/new/Adder_8bit.vhd -to_files {{D:/APP2 S4/Adder_8bit.vhd}} -filesets [get_filesets *]
-add_files -norecurse C:/Users/antho/Documents/Programmes/S4APP2/pb_logique_seq/pb_logique_seq.srcs/sources_1/new/Adder_1bit.vhd
-update_compile_order -fileset sources_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top Add_24bits [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]

@@ -50,18 +50,69 @@ architecture Behavioral of calcul_param_2 is
 ---------------------------------------------------------------------------------
 -- Signaux
 ----------------------------------------------------------------------------------
- --signal i_ech_s : std_logic_vector (23 downto 0);
- --signal o_param_s : std_logic_vector (7 downto 0);
+ signal s_i_ech, s_i_ech2 : std_logic_vector (23 downto 0);
+ signal s_i_ech3 : std_logic_vector (28 downto 0);
+ signal s_o_param : std_logic_vector (7 downto 0);
  
+ 
+---------------------------------------------------------------------------------------------
+--    Components
+---------------------------------------------------------------------------------------------
+component Carre_24bits is
+Port ( Xin2 : in std_logic_vector (23 downto 0);
+       Yout2: out std_logic_vector (23 downto 0) 
+      );
+end component;
+
+component Conv24to29bits is
+Port ( Xconv24 : in std_logic_vector (23 downto 0);
+       Yconv29 : out std_logic_vector (29 downto 0)
+     );
+end component;
+
+
+
+component Conv29to8bits is
+Port ( Xconv29 : in std_logic_vector (28 downto 0);
+       Yconv7 : out std_logic_vector (7 downto 0)
+     );
+end component;
+
+
 ---------------------------------------------------------------------------------------------
 --    Description comportementale
 ---------------------------------------------------------------------------------------------
 begin 
---process(i_reset, i_bclk)
+
+inst_carre : Carre_24bits
+Port map(
+          Xin2 => s_i_ech,
+          Yout2 => s_i_ech2
+         );
+
+inst_conv24to29 : Conv24to29bits
+Port map(
+          Xconv24 => s_i_ech2,
+          Yconv29 => s_i_ech3
+        );
+
+
+
+
+inst_Conv29to8bits : Conv29to8bits
+Port map(
+          Xconv29 => s_i_ech2,
+          Yconv7 => s_i_ech3
+        );
+---------------------------------------------------------------------------------------------
+process(i_reset, i_bclk)
+begin
+
+
 
 o_param <= x"02";    -- temporaire ...
 
---end process;
+end process;
 
 
 
