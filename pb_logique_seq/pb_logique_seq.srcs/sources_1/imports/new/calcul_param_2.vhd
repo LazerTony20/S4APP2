@@ -51,8 +51,8 @@ architecture Behavioral of calcul_param_2 is
 -- Signaux
 ----------------------------------------------------------------------------------
  signal s_i_ech, s_i_ech2 : std_logic_vector (23 downto 0);
- signal s_i_ech3 : std_logic_vector (28 downto 0);
- signal s_o_param : std_logic_vector (7 downto 0);
+ signal s_i_ech3, s_i_ech4, s_i_ech5 : std_logic_vector (28 downto 0);
+ signal s_y_out29, s_o_param : std_logic_vector (7 downto 0);
  
  
 ---------------------------------------------------------------------------------------------
@@ -66,11 +66,20 @@ end component;
 
 component Conv24to29bits is
 Port ( Xconv24 : in std_logic_vector (23 downto 0);
-       Yconv29 : out std_logic_vector (29 downto 0)
+       Yconv29 : out std_logic_vector (28 downto 0)
      );
 end component;
 
 
+component reg_29b is
+Port ( 
+    i_clk       : in std_logic;
+    i_reset     : in std_logic;
+    i_en        : in std_logic;
+    i_dat       : in std_logic_vector(28 downto 0);
+    o_dat       : out  std_logic_vector(28 downto 0)
+      );
+end component;
 
 component Conv29to8bits is
 Port ( Xconv29 : in std_logic_vector (28 downto 0);
@@ -96,24 +105,45 @@ Port map(
           Yconv29 => s_i_ech3
         );
 
-
-
+inst_reg29bits : reg_29b
+Port map(
+          i_clk => i_bclk,
+          i_reset => i_reset,
+          i_en => i_en,
+          i_dat => s_i_ech4,
+          o_dat => s_i_ech5
+        );
 
 inst_Conv29to8bits : Conv29to8bits
 Port map(
-          Xconv29 => s_i_ech2,
-          Yconv7 => s_i_ech3
+          Xconv29 => s_i_ech3,
+          Yconv7 => s_y_out29
         );
 ---------------------------------------------------------------------------------------------
+
+
 process(i_reset, i_bclk)
 begin
+if (i_reset = '1')  then
+    s_i_ech  <= "000000000000000000000000";
+elsif rising_edge(i_bclk) then
+    s_i_ech  <= i_ech;
+end if;
 
 
 
-o_param <= x"02";    -- temporaire ...
+
+
+--o_param <= x"02";    -- temporaire ...
 
 end process;
 
+process(i_bclk)
+begin
+    if rising_edge(i_bclk) then
+        o_param <= s_y_out29;
+    end if;
+end process;
 
 
 end Behavioral;

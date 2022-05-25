@@ -3,7 +3,7 @@
 --    calcul_param_1.vhd
 ---------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------
---    Université de Sherbrooke - Département de GEGI
+--    Universit? de Sherbrooke - D?partement de GEGI
 --
 --    Version         : 5.0
 --    Nomenclature    : inspiree de la nomenclature 0.2 GRAMS
@@ -17,8 +17,8 @@
 ---------------------------------------------------------------------------------------------
 --
 ---------------------------------------------------------------------------------------------
--- À FAIRE: 
--- Voir le guide de la problématique
+-- ? FAIRE: 
+-- Voir le guide de la probl?matique
 ---------------------------------------------------------------------------------------------
 --
 ---------------------------------------------------------------------------------------------
@@ -37,9 +37,9 @@ entity calcul_param_1 is
     Port (
     i_bclk    : in   std_logic; -- bit clock (I2S)
     i_reset   : in   std_logic;
-    i_en      : in   std_logic; -- un echantillon present a l'entrée
-    i_ech     : in   std_logic_vector (23 downto 0); -- echantillon en entrée
-    o_param   : out  std_logic_vector (7 downto 0)   -- paramètre calculé
+    i_en      : in   std_logic; -- un echantillon present a l'entr?e
+    i_ech     : in   std_logic_vector (23 downto 0); -- echantillon en entr?e
+    o_param   : out  std_logic_vector (7 downto 0)   -- param?tre calcul?
     );
 end calcul_param_1;
 
@@ -50,13 +50,58 @@ architecture Behavioral of calcul_param_1 is
 ---------------------------------------------------------------------------------
 -- Signaux
 ----------------------------------------------------------------------------------
-    
+ component M5_MEF is
+ Port(
+    i_sound : in STD_LOGIC_VECTOR (23 downto 0);
+    clk : in STD_LOGIC;
+    o_reset : out STD_LOGIC
+ );
+ end component;   
 
+component M5_Compteur is
+Port(
+    clk : in STD_LOGIC;
+    i_reset : in STD_LOGIC;
+    o_param : out STD_LOGIC_VECTOR (7 downto 0)
+);
+end component;
+
+component M8_Memory is
+Port(
+    i_write : in STD_LOGIC_VECTOR (7 downto 0);
+    i_reset : in STD_LOGIC;
+    o_read : out STD_LOGIC_VECTOR (7 downto 0);
+    i_clk: in std_logic 
+);
+end component;
+
+Signal reset:std_logic ;
+Signal decompte: std_logic_vector (7 downto 0);
 ---------------------------------------------------------------------------------------------
 --    Description comportementale
 ---------------------------------------------------------------------------------------------
 begin 
-
-     o_param <= x"01";    -- temporaire ...
+     MEF: M5_MEF
+     Port map(
+        i_sound => i_ech,
+        clk => i_bclk,
+        o_reset => reset
+     );
+     
+     CPT: M5_Compteur
+     Port map(
+        clk=>i_bclk,
+        i_reset=>reset,
+        o_param=> decompte
+     );
+     
+     MEM: M8_Memory
+     Port map(
+        i_write=>decompte,
+        i_reset=>reset,
+        o_read=>o_param,
+        i_clk=>i_bclk
+     );
  
+    
 end Behavioral;

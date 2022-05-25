@@ -40,6 +40,6 @@ end Conv29to8bits;
 architecture Behavioral of Conv29to8bits is
 
 begin
-
+Yconv7 <= Xconv29(27 downto 20);
 
 end Behavioral;

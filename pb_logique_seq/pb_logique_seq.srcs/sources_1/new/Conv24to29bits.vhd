@@ -44,12 +44,12 @@ end Conv24to29bits;
 architecture Behavioral of Conv24to29bits is
 
 ---------------------------------------------------------------------------------------------
-signal s_Xconv24 : signed(23 downto 0);
-signal s_Yconv29 : signed(28 downto 0);
+--signal s_Xconv24 : std_logic_vector(23 downto 0);
+signal s_Yconv29 : std_logic_vector(28 downto 0) := "00000000000000000000000000000";
 ---------------------------------------------------------------------------------------------
 begin
-s_Xconv24 <= signed(Xconv24);
-s_Yconv29 <= s_Xconv24;
-Yconv29 <= std_logic_vector(s_Yconv29);
+--s_Xconv24 <= Xconv24;
+s_Yconv29(23 downto 0) <= Xconv24(23 downto 0);
+Yconv29 <= s_Yconv29;
 
 end Behavioral;

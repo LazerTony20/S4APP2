@@ -285,7 +285,7 @@ end process;
         wait for 2 us;
         s_reset <= '0';
         s_btn <= "0000";
-        s_sw <= "0000";
+        s_sw <= "0001";
         wait for 40 us;
                  
         WAIT; -- will wait forever
