@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Thu May 26 12:51:28 2022
+--Date        : Thu May 26 13:24:56 2022
 --Host        : ThinkPad-Antho running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -77,16 +77,13 @@ architecture STRUCTURE of M1_decodeur_i2s_imp_17RYJKZ is
   signal i_data_1 : STD_LOGIC;
   signal i_lrc_1 : STD_LOGIC;
   signal i_reset_1 : STD_LOGIC;
+  signal mef_decod_i2s_v1b_0_o_bit_enable : STD_LOGIC;
   signal mef_decod_i2s_v1b_0_o_load_left : STD_LOGIC;
   signal mef_decod_i2s_v1b_0_o_load_right : STD_LOGIC;
+  signal mef_decod_i2s_v1b_0_o_str_dat : STD_LOGIC;
   signal reg_24b_0_o_dat : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal reg_24b_1_o_dat : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal reg_dec_24b_0_o_dat : STD_LOGIC_VECTOR ( 23 downto 0 );
-  signal NLW_MEF_decodeur_i2s_o_dat_strb_UNCONNECTED : STD_LOGIC;
-  signal NLW_MEF_decodeur_i2s_o_reset_UNCONNECTED : STD_LOGIC;
-  signal NLW_compteur_7bits_i_en_UNCONNECTED : STD_LOGIC;
-  signal NLW_compteur_7bits_reset_UNCONNECTED : STD_LOGIC;
-  signal NLW_registre_decalage_24bits_i_en_UNCONNECTED : STD_LOGIC;
 begin
   clk_1 <= clk;
   i_data_1 <= i_data;
@@ -94,23 +91,23 @@ begin
   i_reset_1 <= i_reset;
   o_dat_left(23 downto 0) <= reg_24b_1_o_dat(23 downto 0);
   o_dat_right(23 downto 0) <= reg_24b_0_o_dat(23 downto 0);
-  o_str_dat <= 'Z';
+  o_str_dat <= mef_decod_i2s_v1b_0_o_str_dat;
 MEF_decodeur_i2s: component design_1_mef_decod_i2s_v1b_0_0
      port map (
       i_bclk => clk_1,
       i_lrc => i_lrc_1,
-      i_switch => '0',
-      o_dat_strb => NLW_MEF_decodeur_i2s_o_dat_strb_UNCONNECTED,
+      i_switch => compteur_nbits_0_o_val_cpt(0),
+      o_dat_strb => mef_decod_i2s_v1b_0_o_str_dat,
       o_load_left => mef_decod_i2s_v1b_0_o_load_left,
       o_load_right => mef_decod_i2s_v1b_0_o_load_right,
-      o_reset => NLW_MEF_decodeur_i2s_o_reset_UNCONNECTED
+      o_reset => mef_decod_i2s_v1b_0_o_bit_enable
     );
 compteur_7bits: component design_1_compteur_nbits_0_0
      port map (
       clk => clk_1,
-      i_en => NLW_compteur_7bits_i_en_UNCONNECTED,
+      i_en => mef_decod_i2s_v1b_0_o_bit_enable,
       o_val_cpt(6 downto 0) => compteur_nbits_0_o_val_cpt(6 downto 0),
-      reset => NLW_compteur_7bits_reset_UNCONNECTED
+      reset => i_reset_1
     );
 registre_24bits_droite: component design_1_reg_24b_0_0
      port map (
@@ -133,7 +130,7 @@ registre_decalage_24bits: component design_1_reg_dec_24b_0_0
       i_clk => clk_1,
       i_dat_bit => i_data_1,
       i_dat_load(23 downto 0) => B"000000000000000000000000",
-      i_en => NLW_registre_decalage_24bits_i_en_UNCONNECTED,
+      i_en => mef_decod_i2s_v1b_0_o_bit_enable,
       i_load => '0',
       i_reset => i_reset_1,
       o_dat(23 downto 0) => reg_dec_24b_0_o_dat(23 downto 0)
@@ -324,7 +321,7 @@ use UNISIM.VCOMPONENTS.ALL;
     o_sel_par : out STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=26,numReposBlks=24,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=19,numPkgbdBlks=0,bdsource=USER,""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_clkrst_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=26,numReposBlks=24,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=19,numPkgbdBlks=0,bdsource=USER,""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_clkrst_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;

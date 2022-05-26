@@ -1,9 +1,9 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_compteur_nbits_0_0/sim/design_1_compteur_nbits_0_0.vhd" \
-  "../../../bd/design_1/ip/design_1_mef_decod_i2s_v1b_0_0/sim/design_1_mef_decod_i2s_v1b_0_0.vhd" \
   "../../../bd/design_1/ip/design_1_reg_24b_0_0/sim/design_1_reg_24b_0_0.vhd" \
   "../../../bd/design_1/ip/design_1_reg_24b_0_1/sim/design_1_reg_24b_0_1.vhd" \
   "../../../bd/design_1/ip/design_1_reg_dec_24b_0_0/sim/design_1_reg_dec_24b_0_0.vhd" \
+  "../../../bd/design_1/ip/design_1_mef_decod_i2s_v1b_0_0/sim/design_1_mef_decod_i2s_v1b_0_0.vhd" \
 -endlib
 -makelib ies_lib/util_vector_logic_v2_0_1 \
   "../../../../pb_logique_seq.gen/sources_1/bd/design_1/ipshared/3f90/hdl/util_vector_logic_v2_0_vl_rfs.v" \

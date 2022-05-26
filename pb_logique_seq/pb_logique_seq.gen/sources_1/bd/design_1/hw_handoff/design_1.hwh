@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu May 26 12:51:28 2022" VIVADOVERSION="2020.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu May 26 13:24:56 2022" VIVADOVERSION="2020.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-10:part0:1.0" DEVICE="7z010" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -120,7 +120,11 @@
             <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="i_switch" SIGIS="undef"/>
+        <PORT DIR="I" NAME="i_switch" SIGIS="undef" SIGNAME="M1_decodeur_i2s_compteur_7bits_o_val_cpt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_compteur_7bits" PORT="o_val_cpt"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" NAME="i_lrc" SIGIS="undef" SIGNAME="External_Ports_i_lrc">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="i_lrc"/>
@@ -136,8 +140,19 @@
             <CONNECTION INSTANCE="M1_decodeur_i2s_registre_24bits_droite" PORT="i_en"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="o_reset" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
-        <PORT DIR="O" NAME="o_dat_strb" SIGIS="undef"/>
+        <PORT DIR="O" NAME="o_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_compteur_7bits" PORT="i_en"/>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_registre_decalage_24bits" PORT="i_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_dat_strb" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_dat_strb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M7_parametre_3" PORT="i_en"/>
+            <CONNECTION INSTANCE="M5_parametre_1" PORT="i_en"/>
+            <CONNECTION INSTANCE="M6_parametre_2" PORT="i_en"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -154,9 +169,21 @@
             <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="i_en" SIGIS="undef"/>
-        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
-        <PORT DIR="O" LEFT="6" NAME="o_val_cpt" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="i_en" POLARITY="ACTIVE_LOW" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="o_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="M8_commande_o_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M8_commande" PORT="o_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="6" NAME="o_val_cpt" RIGHT="0" SIGIS="undef" SIGNAME="M1_decodeur_i2s_compteur_7bits_o_val_cpt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="i_switch"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -251,7 +278,11 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="i_load" SIGIS="undef"/>
-        <PORT DIR="I" NAME="i_en" SIGIS="undef"/>
+        <PORT DIR="I" NAME="i_en" POLARITY="ACTIVE_LOW" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="o_reset"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" NAME="i_dat_bit" SIGIS="undef" SIGNAME="External_Ports_i_recdat">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="i_recdat"/>
@@ -346,7 +377,11 @@
             <CONNECTION INSTANCE="M8_commande" PORT="o_reset"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="i_en" SIGIS="undef"/>
+        <PORT DIR="I" NAME="i_en" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_dat_strb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="o_dat_strb"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="23" NAME="i_ech" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexeur_choix_fonction_output0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Multiplexeur_choix_fonction" PORT="output0"/>
@@ -377,7 +412,11 @@
             <CONNECTION INSTANCE="M8_commande" PORT="o_reset"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="i_en" SIGIS="undef"/>
+        <PORT DIR="I" NAME="i_en" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_dat_strb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="o_dat_strb"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="23" NAME="i_ech" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexeur_choix_fonction_output0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Multiplexeur_choix_fonction" PORT="output0"/>
@@ -408,7 +447,11 @@
             <CONNECTION INSTANCE="M8_commande" PORT="o_reset"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="i_en" SIGIS="undef"/>
+        <PORT DIR="I" NAME="i_en" SIGIS="undef" SIGNAME="M1_decodeur_i2s_MEF_decodeur_i2s_o_dat_strb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_MEF_decodeur_i2s" PORT="o_dat_strb"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="23" NAME="i_ech" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexeur_choix_fonction_output0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Multiplexeur_choix_fonction" PORT="output0"/>
@@ -441,6 +484,7 @@
             <CONNECTION INSTANCE="M1_decodeur_i2s_registre_24bits_droite" PORT="i_reset"/>
             <CONNECTION INSTANCE="M1_decodeur_i2s_registre_24bits_gauche" PORT="i_reset"/>
             <CONNECTION INSTANCE="M1_decodeur_i2s_registre_decalage_24bits" PORT="i_reset"/>
+            <CONNECTION INSTANCE="M1_decodeur_i2s_compteur_7bits" PORT="reset"/>
             <CONNECTION INSTANCE="M9_codeur_i2s_mef_cod_i2s_vsb_0" PORT="i_reset"/>
             <CONNECTION INSTANCE="M9_codeur_i2s_reg_dec_24b_fd_0" PORT="i_reset"/>
             <CONNECTION INSTANCE="M10_conversion_affichage" PORT="reset"/>

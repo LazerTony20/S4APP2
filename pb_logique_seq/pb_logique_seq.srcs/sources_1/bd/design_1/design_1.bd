@@ -173,7 +173,13 @@
                 }
               },
               "i_en": {
-                "direction": "I"
+                "direction": "I",
+                "parameters": {
+                  "POLARITY": {
+                    "value": "ACTIVE_LOW",
+                    "value_src": "default_prop"
+                  }
+                }
               },
               "reset": {
                 "type": "rst",
@@ -319,7 +325,13 @@
                 "direction": "I"
               },
               "i_en": {
-                "direction": "I"
+                "direction": "I",
+                "parameters": {
+                  "POLARITY": {
+                    "value": "ACTIVE_LOW",
+                    "value_src": "default_prop"
+                  }
+                }
               },
               "i_dat_bit": {
                 "direction": "I"
@@ -408,6 +420,7 @@
           },
           "mef_decod_i2s_v1b_0_o_str_dat": {
             "ports": [
+              "MEF_decodeur_i2s/o_dat_strb",
               "o_str_dat"
             ]
           },
@@ -433,13 +446,9 @@
               "MEF_decodeur_i2s/i_bclk"
             ]
           },
-          "mef_decod_i2s_v1b_0_o_cpt_bit_reset": {
-            "ports": [
-              "compteur_7bits/reset"
-            ]
-          },
           "mef_decod_i2s_v1b_0_o_bit_enable": {
             "ports": [
+              "MEF_decodeur_i2s/o_reset",
               "compteur_7bits/i_en",
               "registre_decalage_24bits/i_en"
             ]
@@ -458,7 +467,8 @@
           },
           "compteur_nbits_0_o_val_cpt": {
             "ports": [
-              "compteur_7bits/o_val_cpt"
+              "compteur_7bits/o_val_cpt",
+              "MEF_decodeur_i2s/i_switch"
             ]
           },
           "i_reset_1": {
@@ -466,7 +476,8 @@
               "i_reset",
               "registre_24bits_droite/i_reset",
               "registre_24bits_gauche/i_reset",
-              "registre_decalage_24bits/i_reset"
+              "registre_decalage_24bits/i_reset",
+              "compteur_7bits/reset"
             ]
           }
         }

@@ -40,6 +40,7 @@ Port (
 i_bclk : in std_logic;
 i_switch : in std_logic;
 i_lrc : in std_logic;
+--i_reset : in std_logic; --
 o_load_left : out std_logic ; --
 o_load_right : out std_logic ; --
 o_reset : out std_logic; --

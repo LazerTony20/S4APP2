@@ -1,0 +1,1345 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 6932
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu May 26 13:48:43 EDT 2022
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	antho
+User home directory: C:/Users/antho
+User working directory: C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq
+User country: 	CA
+User language: 	fr
+User locale: 	fr_CA
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/antho/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/antho/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/antho/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/vivado.log
+Vivado journal file location: 	C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/vivado.jou
+Engine tmp dir: 	C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/.Xil/Vivado-6932-ThinkPad-Antho
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_SDK: C:/Xilinx/Vitis/2020.2
+XILINX_VITIS: C:/Xilinx/Vitis/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	171 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,098 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 83 MB (+84830kb) [00:00:09]
+// [Engine Memory]: 1,098 MB (+1000094kb) [00:00:09]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\antho\Documents\Programmes\S4APP2\new\pb_logique_seq\pb_logique_seq.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,098 MB. GUI used memory: 55 MB. Current time: 5/26/22, 1:48:44 PM EDT
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 98 MB (+11468kb) [00:00:16]
+// [GUI Memory]: 107 MB (+4252kb) [00:00:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  4391 ms.
+// Tcl Message: open_project C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// Project name: pb_logique_seq; location: C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq; part: xc7z010clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:09 . Memory (MB): peak = 1095.125 ; gain = 0.000 
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 120 MB (+7676kb) [00:00:23]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 131 MB (+5594kb) [00:00:26]
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bz (cr):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: open_bd_design {C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd} 
+// Tcl Message: Reading block design file <C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  2153 ms.
+// Elapsed time: 14 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1095.125 ; gain = 0.000 
+// 'bF' command handler elapsed time: 14 seconds
+dismissDialog("Open Block Design"); // bz
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (M8_commande) elapsed time: 0.2s
+// Elapsed time: 10 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 706, 228, 1065, 361, false, false, false, true, false); // hv - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_GOTO_SOURCE, "Go to Source"); // ak
+// Run Command: PAResourceCommand.PACommandNames_GOTO_SOURCE
+// 'ds' command handler elapsed time: 22 seconds
+// [GUI Memory]: 142 MB (+4544kb) [00:01:25]
+// WARNING: HEventQueue.dispatchEvent() is taking  22815 ms.
+// Thread: Monitor HEventQueue Thread
+// 	at java.base@11.0.2/java.lang.Thread.dumpThreads(Native Method)
+// 	at java.base@11.0.2/java.lang.Thread.getAllStackTraces(Thread.java:1657)
+// 	at ui.utils.d.c.hXX(SourceFile:557)
+// 	at ui.frmwork.a.e.aOt(SourceFile:144)
+// 	at ui.frmwork.y.run(SourceFile:203)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Java2D Disposer
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at java.desktop@11.0.2/sun.java2d.Disposer.run(Disposer.java:144)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: SyntheticaAnimation 25
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: AWT-Shutdown
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.Object.wait(Object.java:328)
+// 	at java.desktop@11.0.2/sun.awt.AWTAutoShutdown.run(AWTAutoShutdown.java:291)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: TimerQueue
+// 	at java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+// 	at java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+// 	at java.base@11.0.2/java.util.concurrent.DelayQueue.take(DelayQueue.java:229)
+// 	at java.desktop@11.0.2/javax.swing.TimerQueue.run(TimerQueue.java:171)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: pool-2-thread-1
+// 	at java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Process Messages Thread
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at ui.frmwork.c.h.aOt(SourceFile:133)
+// 	at ui.frmwork.y.run(SourceFile:203)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Common-Cleaner
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.2/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// 	at java.base@11.0.2/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+// Thread: Update Runs Swing Worker Thread
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.experiment.F.aOt(SourceFile:368)
+// 	at ui.frmwork.y.run(SourceFile:203)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Refresh Filesets Swing Worker Thread
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.design.z.aOt(SourceFile:2503)
+// 	at ui.frmwork.y.run(SourceFile:203)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: hw_ila_monitor
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.Object.wait(Object.java:328)
+// 	at java.base@11.0.2/java.util.TimerThread.mainLoop(Timer.java:527)
+// 	at java.base@11.0.2/java.util.TimerThread.run(Timer.java:506)
+// Thread: pool-3-thread-1
+// 	at java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: pool-1-thread-1
+// 	at java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Batik CleanerThread
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at org.apache.batik.util.CleanerThread.run(CleanerThread.java:106)
+// Thread: main
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at ui.PlanAhead.c(SourceFile:1129)
+// 	at ui.PlanAhead.jswMain(SourceFile:1176)
+// Thread: Reference Handler
+// 	at java.base@11.0.2/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+// 	at java.base@11.0.2/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+// 	at java.base@11.0.2/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+// Thread: Thread-33
+// Thread: Signal Dispatcher
+// Thread: AWT-Windows
+// 	at java.desktop@11.0.2/sun.awt.windows.WToolkit.eventLoop(Native Method)
+// 	at java.desktop@11.0.2/sun.awt.windows.WToolkit.run(WToolkit.java:303)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Finalizer
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at java.base@11.0.2/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+// Thread: Thread-1
+// Thread: SyntheticaAnimation 50
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: SyntheticaAnimation 70
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Image Animator 3
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at java.desktop@11.0.2/sun.awt.image.GifFrame.dispose(GifImageDecoder.java:669)
+// 	at java.desktop@11.0.2/sun.awt.image.GifImageDecoder.readImage(GifImageDecoder.java:458)
+// 	at java.desktop@11.0.2/sun.awt.image.GifImageDecoder.produceImage(GifImageDecoder.java:212)
+// 	at java.desktop@11.0.2/sun.awt.image.InputStreamImageSource.doFetch(InputStreamImageSource.java:269)
+// 	at java.desktop@11.0.2/sun.awt.image.ImageFetcher.fetchloop(ImageFetcher.java:212)
+// 	at java.desktop@11.0.2/sun.awt.image.ImageFetcher.run(ImageFetcher.java:176)
+// Thread: Thread-30
+// Thread: SyntheticaCleanerThread
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.StyleFactory$ComponentPropertyStore$1.run(StyleFactory.java:1885)
+// Thread: AWT-EventQueue-0
+// 	at ui.data.designgraph.designgraphi.HADGUtils_findAddModules(Native Method)
+// 	at ui.data.design.d.a(SourceFile:118)
+// 	at ui.data.design.d.a(SourceFile:143)
+// 	at ui.views.c.ds.run(SourceFile:178)
+// 	at ui.frmwork.cmd.a.hsT(SourceFile:132)
+// 	at ui.e.aQ.actionPerformed(SourceFile:212)
+// 	at java.desktop@11.0.2/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1967)
+// 	at java.desktop@11.0.2/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2308)
+// 	at java.desktop@11.0.2/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:405)
+// 	at java.desktop@11.0.2/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+// 	at java.desktop@11.0.2/javax.swing.AbstractButton.doClick(AbstractButton.java:369)
+// 	at java.desktop@11.0.2/javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:1020)
+// 	at java.desktop@11.0.2/javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:1064)
+// 	at java.desktop@11.0.2/java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297)
+// 	at java.desktop@11.0.2/java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297)
+// 	at java.desktop@11.0.2/java.awt.Component.processMouseEvent(Component.java:6632)
+// 	at java.desktop@11.0.2/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+// 	at java.desktop@11.0.2/java.awt.Component.processEvent(Component.java:6397)
+// 	at java.desktop@11.0.2/java.awt.Container.processEvent(Container.java:2263)
+// 	at java.desktop@11.0.2/java.awt.Component.dispatchEventImpl(Component.java:5008)
+// 	at java.desktop@11.0.2/java.awt.Container.dispatchEventImpl(Container.java:2321)
+// 	at java.desktop@11.0.2/java.awt.Component.dispatchEvent(Component.java:4840)
+// 	at java.desktop@11.0.2/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+// 	at java.desktop@11.0.2/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4547)
+// 	at java.desktop@11.0.2/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+// 	at java.desktop@11.0.2/java.awt.Container.dispatchEventImpl(Container.java:2307)
+// 	at java.desktop@11.0.2/java.awt.Window.dispatchEventImpl(Window.java:2772)
+// 	at java.desktop@11.0.2/java.awt.Component.dispatchEvent(Component.java:4840)
+// 	at java.desktop@11.0.2/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+// 	at java.desktop@11.0.2/java.awt.EventQueue$4.run(EventQueue.java:721)
+// 	at java.desktop@11.0.2/java.awt.EventQueue$4.run(EventQueue.java:715)
+// 	at java.base@11.0.2/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@11.0.2/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+// 	at java.base@11.0.2/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+// 	at java.desktop@11.0.2/java.awt.EventQueue$5.run(EventQueue.java:745)
+// 	at java.desktop@11.0.2/java.awt.EventQueue$5.run(EventQueue.java:743)
+// 	at java.base@11.0.2/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@11.0.2/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+// 	at java.desktop@11.0.2/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+// 	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+// 	at java.desktop@11.0.2/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+// 	at java.desktop@11.0.2/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+// 	at java.desktop@11.0.2/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+// 	at java.desktop@11.0.2/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+// 	at java.desktop@11.0.2/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+// 	at java.desktop@11.0.2/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+// Thread: Attach Listener
+// WARNING: HEventQueue.dispatchEvent() is taking  4669 ms.
+// Elapsed time: 27 seconds
+selectCodeEditor("module_commande.vhd", 92, 67); // bP
+typeControlKey((HResource) null, "module_commande.vhd", 'v'); // bP
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 1,118 MB. GUI used memory: 80 MB. Current time: 5/26/22, 1:50:19 PM EDT
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/schema.tcl");
+// Source Tcl File: 'C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/schema.tcl'
+// Tcl Command: 'source C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/schema.tcl'
+// bz (cr):  Source Tcl Script : addNotify
+// TclEventType: HIGHLIGHT_ADD
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: source C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/schema.tcl 
+dismissDialog("Source Tcl Script"); // bz
+// Elapsed time: 27 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// bz (cr):  Refresh Changed Modules : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: update_module_reference design_1_calcul_param_1_0_0 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'i_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd' 
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded design_1_calcul_param_1_0_0 from calcul_param_1_v1_0 1.0 to calcul_param_1_v1_0 1.0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <C:\Users\antho\Documents\Programmes\S4APP2\new\pb_logique_seq\pb_logique_seq.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_a93fd001.ui>  
+// Tcl Message: update_module_reference design_1_calcul_param_2_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'i_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd' 
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded design_1_calcul_param_2_0_0 from calcul_param_2_v1_0 1.0 to calcul_param_2_v1_0 1.0 
+// Tcl Message: Wrote  : <C:\Users\antho\Documents\Programmes\S4APP2\new\pb_logique_seq\pb_logique_seq.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_a93fd001.ui>  
+// Tcl Message: update_module_reference: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1120.770 ; gain = 0.000 
+// Tcl Message: update_module_reference design_1_module_commande_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'o_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd' 
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded design_1_module_commande_0_0 from module_commande_v1_0 1.0 to module_commande_v1_0 1.0 
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <C:\Users\antho\Documents\Programmes\S4APP2\new\pb_logique_seq\pb_logique_seq.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_a93fd001.ui>  
+// Tcl Message: update_module_reference: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1120.770 ; gain = 0.000 
+// Elapsed time: 22 seconds
+dismissDialog("Refresh Changed Modules"); // bz
+// Elapsed time: 18 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 288, 143, 1065, 398, false, false, false, true, false); // hv - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_GOTO_SOURCE, "Go to Source"); // ak
+// Run Command: PAResourceCommand.PACommandNames_GOTO_SOURCE
+// 'ds' command handler elapsed time: 4 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  4118 ms.
+// RDIResource.RDIViews_PROPERTIES: Block Properties: close view
+// Elapsed time: 131 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK
+// Elapsed time: 58 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 19); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 20); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 20, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 20, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // ah
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RESET, "Reset Simulation"); // ah
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// Elapsed time: 41 seconds
+selectButton(RDIResource.HJFileChooserHelpers_REFRESH_FOLDER_VIEW_TO_REFLECT_EXTERNAL, (String) null); // a
+setFileChooser("C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sim_1/new/Carre_24bits_tb.vhd");
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 55 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 -norecurse C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sim_1/new/Carre_24bits_tb.vhd 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, simul_module_sig_tb(Behavioral) (simul_module_sig_tb.vhd)]", 21, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, simul_module_sig_tb(Behavioral) (simul_module_sig_tb.vhd)]", 21, true, false, false, false, false, true); // D - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,139 MB. GUI used memory: 86 MB. Current time: 5/26/22, 1:55:54 PM EDT
+selectCodeEditor("simul_module_sig_tb.vhd", 191, 355); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 54 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 2); // m
+// Elapsed time: 19 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 3, 223); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 38, 453, true, false, false, false, false); // bP - Shift Key
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 133, 322, false, false, false, true, false); // bP - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ak
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 321, 363); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 321, 363, false, false, false, true, false); // bP - Popup Trigger
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 80, 469); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 18, 450); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 456, 367); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 0, 367); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 50, 342); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 36, 362); // bP
+// Elapsed time: 112 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 2); // m
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 2, 372); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 2, 407); // bP
+// Elapsed time: 25 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 231, 328); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 237, 241); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 19, 367); // bP
+// Elapsed time: 23 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 115, 321); // bP
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 71, 296); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 88, 336); // bP
+// Elapsed time: 21 seconds
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 61, 335, false, false, false, true, false); // bP - Popup Trigger
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 713, 285); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 2, 199); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 90, 432, true, false, false, false, false); // bP - Shift Key
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 6, 362); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 198, 177); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 99, 223); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 99, 223); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 99, 223, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 99, 223); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 81, 195); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 81, 195, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 268, 389); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 143, 250); // bP
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 93, 309); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 93, 309, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 93, 309); // bP
+// Elapsed time: 66 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 2, 300); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 90, 328, true, false, false, false, false); // bP - Shift Key
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 26, 319); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 33, 314); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 93, 436); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 4, 94, true, false, false, false, false); // bP - Shift Key
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 59, 170); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 253, 331); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 253, 331, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 77, 195); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 77, 195); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 77, 195, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 26 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 2, 235); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 127, 219); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 119, 182); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 119, 182, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 64, 196); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 64, 196, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 57, 223); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 39, 241); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 104, 286, true, false, false, false, false); // bP - Shift Key
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 148, 303, true, false, false, false, false); // bP - Shift Key
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 38, 349); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 37, 385); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 145, 456, true, false, false, false, false); // bP - Shift Key
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 35, 371); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 147, 373, true, false, false, false, false); // bP - Shift Key
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 38, 414); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 36, 458); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 145, 391, true, false, false, false, false); // bP - Shift Key
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 187, 304); // bP
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 36, 240); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 35, 311); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 36, 365); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 38, 410); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 38, 288); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 38, 245); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 37, 227); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 25 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 38, 265); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 71, 331); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 71, 342); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 71, 342); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 73, 330); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 72, 418); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 2, 433); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 164, 331); // bP
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 24 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 73, 244); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 73, 244, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 76, 134); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 76, 134, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'c'); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 120, 265); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 120, 265, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 94 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 112, 121); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 112, 121, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'c'); // bP
+// Elapsed time: 34 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 285, 178); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 285, 178); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 285, 178); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 285, 178, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 36 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 113, 258); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 113, 258, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 47 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 19 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 309, 199, 1247, 565, false, false, false, true, false); // hv - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_GOTO_SOURCE, "Go to Source"); // ak
+// Run Command: PAResourceCommand.PACommandNames_GOTO_SOURCE
+selectCodeEditor("compteur_nbits.vhd", 141, 141); // bP
+selectCodeEditor("compteur_nbits.vhd", 141, 141, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 2); // m
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 97, 281); // bP
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 38, 237); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 102, 228); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 4, 115); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 36, 140); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 35, 159); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 35, 175); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 37, 247); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 306, 325); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 306, 325, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 77, 216); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 77, 216, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'c'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 309, 200); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 309, 200, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 123, 244); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 123, 244, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 80, 225); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 80, 225, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'c'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 102, 180); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 102, 180, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 103, 225); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 197, 263); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 222, 263); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 36, 265, true, false, false, false, false); // bP - Shift Key
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 178, 265); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 236, 262); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 212, 263); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 212, 263, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 107, 219); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 107, 219, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 149, 241); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 111, 263); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 35, 261); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 85, 68); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 85, 68, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 118, 249); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 118, 249, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 21 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 62, 199); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 62, 199, false, false, false, false, true); // bP - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "simul_module_sig_tb.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 2); // m
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 156, 218); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 156, 218, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "compteur_nbits.vhd", 4); // m
+selectCodeEditor("compteur_nbits.vhd", 106, 243); // bP
+selectCodeEditor("compteur_nbits.vhd", 106, 243, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("compteur_nbits.vhd", 106, 243); // bP
+selectCodeEditor("compteur_nbits.vhd", 110, 223); // bP
+selectCodeEditor("compteur_nbits.vhd", 110, 223, false, false, false, false, true); // bP - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "simul_module_sig_tb.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 2); // m
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 73, 245); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 96, 136); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 96, 136, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "compteur_nbits.vhd", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "simul_module_sig_tb.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 2); // m
+// Elapsed time: 11 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 100, 370); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 167, 385); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 277, 415); // bP
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "compteur_nbits.vhd", 4); // m
+selectCodeEditor("compteur_nbits.vhd", 344, 241); // bP
+selectCodeEditor("compteur_nbits.vhd", 344, 241, false, false, false, false, true); // bP - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "simul_module_sig_tb.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 2); // m
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 171, 371); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 298, 422); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 302, 404); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 59, 201); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "compteur_nbits.vhd", 4); // m
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "simul_module_sig_tb.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 2); // m
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 127, 204); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 146, 203); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "compteur_nbits.vhd", 4); // m
+selectCodeEditor("compteur_nbits.vhd", 118, 220); // bP
+selectCodeEditor("compteur_nbits.vhd", 118, 220, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("compteur_nbits.vhd", 175, 219); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "module_commande.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 2); // m
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 284, 221); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 208, 305); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 74, 80); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "compteur_nbits.vhd", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "simul_module_sig_tb.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "module_commande.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 2); // m
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 86, 70); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 86, 70, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'c'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 166, 371); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 141, 429); // bP
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 278, 351); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 278, 351, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 151, 179); // bP
+// Elapsed time: 21 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 262, 415); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 108, 433); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 76, 327); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 76, 327, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'c'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 86, 376); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 86, 376, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 111, 202); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 111, 202, false, false, false, false, true); // bP - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "module_commande.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 2); // m
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 133, 201); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 133, 201, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 117, 370); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 117, 370, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "compteur_nbits.vhd", 4); // m
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "simul_module_sig_tb.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 2); // m
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 266, 377); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 9, 309); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// [GUI Memory]: 150 MB (+13kb) [00:36:09]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 2); // m
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 280, 239); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 280, 239, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 220, 268); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 159, 265); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 159, 265, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "module_commande.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "module_commande.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 2); // m
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 284, 194); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,143 MB. GUI used memory: 88 MB. Current time: 5/26/22, 2:25:55 PM EDT
+// Elapsed time: 25 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 225, 386); // bP
+// Elapsed time: 42 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 162, 368); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 162, 368, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 78 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "module_commande.vhd", 1); // m
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 2); // m
+// Elapsed time: 20 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 252, 214); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 252, 214, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 150, 84); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 236, 139); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 236, 139, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 236, 139); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 64, 239); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 94, 270); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 94, 270, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 94, 270); // bP
+// Elapsed time: 96 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 71, 332); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 269 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "module_commande.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 2); // m
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 43, 330); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 43, 330, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "module_commande.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 1); // m
+// Elapsed time: 16 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 127, 122); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 127, 122, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'c'); // bP
+// Elapsed time: 20 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 277, 122); // bP
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'c'); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 204, 20); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 204, 20); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 204, 20, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 125, 175); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 125, 175, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 93, 195); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 245, 178); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 245, 178, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 177, 95); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 177, 95); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 177, 95, false, false, false, false, true); // bP - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 68 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// bz (cr):  Refresh Changed Modules : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: update_module_reference design_1_mef_decod_i2s_v1b_0_0 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'i_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'o_cpt_bit_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd' 
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded design_1_mef_decod_i2s_v1b_0_0 from mef_decod_i2s_v1b_v1_0 1.0 to mef_decod_i2s_v1b_v1_0 1.0 
+// Tcl Message: Wrote  : <C:\Users\antho\Documents\Programmes\S4APP2\new\pb_logique_seq\pb_logique_seq.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_a93fd001.ui>  
+dismissDialog("Refresh Changed Modules"); // bz
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 1); // m
+// Elapsed time: 13 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 514, 79); // dS
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 514, 79, false, false, false, false, true); // dS - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 514, 79); // dS
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 368, 24); // dS
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 368, 24, false, false, false, false, true); // dS - Double Click
+// Elapsed time: 27 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 147, 287); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 147, 287, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 129 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mef_decod_i2s_v1b.vhd", 1); // m
+// Elapsed time: 17 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 155, 159); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 155, 159, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'c'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 66, 366); // bP
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 145, 308); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 145, 308, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'c'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 126, 437); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 126, 437, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 123, 436); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 123, 436, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 157, 306); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 157, 306, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 143, 433); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 143, 433, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 56, 423); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 297, 239); // bP
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 292, 172); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 274, 175); // bP
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 372, 283); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 72, 282); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 72, 282, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 228, 203); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 166, 286); // bP
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 347, 277); // bP
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 100, 157); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 100, 157, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 35 seconds
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 150, 134); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 150, 134, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 147, 180); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 147, 180, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'c'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 101, 291); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 101, 291, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 111, 354); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 111, 354, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 109, 324); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 109, 324, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 106, 382); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 106, 382, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "mef_decod_i2s_v1b.vhd", 'v'); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 210, 137); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 207, 30); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 204, 158); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 276, 250); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 285, 250); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 142, 244); // bP
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 14 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: update_module_reference design_1_mef_decod_i2s_v1b_0_0 
+// bz (cr):  Refresh Changed Modules : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'i_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'o_cpt_bit_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd' 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded design_1_mef_decod_i2s_v1b_0_0 from mef_decod_i2s_v1b_v1_0 1.0 to mef_decod_i2s_v1b_v1_0 1.0 
+// Tcl Message: Wrote  : <C:\Users\antho\Documents\Programmes\S4APP2\new\pb_logique_seq\pb_logique_seq.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_a93fd001.ui>  
+// Tcl Message: update_module_reference: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1136.594 ; gain = 0.188 
+// Elapsed time: 15 seconds
+dismissDialog("Refresh Changed Modules"); // bz
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: generate_target Simulation [get_files C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd] 
+// Tcl Message: Wrote  : <C:\Users\antho\Documents\Programmes\S4APP2\new\pb_logique_seq\pb_logique_seq.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_a93fd001.ui>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: VHDL Output written to : c:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/synth/design_1.vhd VHDL Output written to : c:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/sim/design_1.vhd VHDL Output written to : c:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_a93fd001.ui>  
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block M1_decodeur_i2s/MEF_decodeur_i2s . INFO: [BD 41-1029] Generation completed for the IP Integrator block M5_parametre_1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block M6_parametre_2 . INFO: [BD 41-1029] Generation completed for the IP Integrator block M8_commande . 
+// Tcl Message: Exporting to file c:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file c:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File c:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1291.914 ; gain = 155.320 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.sim/sim_1/behav/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-7] Finding pre-compiled libraries... INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.sim/sim_1/behav/xsim' INFO: [SIM-utils-54] Inspecting design source files for 'simul_module_sig_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... 
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj simul_module_sig_tb_vlog.prj" 
+// Tcl Message: "xvhdl --incr --relax -prj simul_module_sig_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1291.914 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '11' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto ae302d5aa3284400815652c101d33dae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L util_vector_logic_v2_0_1 -L xlconcat_v2_1_4 -L xlconstant_v1_1_7 -L xlslice_v1_0_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simul_module_sig_tb_behav xil_defaultlib.simul_module_sig_tb xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator 2020.2 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ae302d5aa3284400815652c101d33dae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L util_vector_logic_v2_0_1 -L xlconcat_v2_1_4 -L xlconstant_v1_1_7 -L xlslice_v1_0_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simul_module_sig_tb_behav xil_defaultlib.simul_module_sig_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration Pass Through NonSizing Optimizer 
+// Tcl Message: ERROR: [VRFC 10-494] choice "010111" should have 7 elements [C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/mef_decod_i2s_v1b.vhd:74] ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed. 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:29 . Memory (MB): peak = 1291.914 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 70 seconds
+// Elapsed time: 71 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// a (cr): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g: FALSE
+// Elapsed time: 18 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-494] choice 010111 should have 7 elements [C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/imports/new/mef_decod_i2s_v1b.vhd:74]. ]", 8, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\antho\Documents\Programmes\S4APP2\new\pb_logique_seq\pb_logique_seq.srcs\sources_1\imports\new\mef_decod_i2s_v1b.vhd;-;;-;16;-;line;-;74;-;;-;16;-;"); // ah
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 118, 219); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 118, 219, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 135, 191); // bP
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 135, 191, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("mef_decod_i2s_v1b.vhd", 90, 220); // bP
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h
+// TclEventType: IP_LOCK_CHANGE
+// bz (cr):  Refresh Changed Modules : addNotify
+// Tcl Message: update_module_reference design_1_mef_decod_i2s_v1b_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'i_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'o_cpt_bit_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd' 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded design_1_mef_decod_i2s_v1b_0_0 from mef_decod_i2s_v1b_v1_0 1.0 to mef_decod_i2s_v1b_v1_0 1.0 
+// Tcl Message: Wrote  : <C:\Users\antho\Documents\Programmes\S4APP2\new\pb_logique_seq\pb_logique_seq.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  Wrote  : <C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/ui/bd_a93fd001.ui>  
+// Tcl Message: update_module_reference: Time (s): cpu = 00:00:01 ; elapsed = 00:00:26 . Memory (MB): peak = 1312.309 ; gain = 16.133 
+// Elapsed time: 26 seconds
+dismissDialog("Refresh Changed Modules"); // bz
+// Elapsed time: 57 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target Simulation [get_files C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd] 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block M1_decodeur_i2s/MEF_decodeur_i2s . 
+// Tcl Message: Exporting to file c:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file c:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File c:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/antho/Documents/Programmes/S4APP2/new/pb_logique_seq/pb_logique_seq.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
