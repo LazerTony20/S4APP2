@@ -31,81 +31,94 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;  -- pour les additions dans les compteurs
+use IEEE.STD_LOGIC_UNSIGNED.ALL; -- pour les additions dans les compteurs
+
+
 
 entity mef_decod_i2s_v1b is
-   Port ( 
-   i_bclk      : in std_logic;
-   i_reset     : in    std_logic; 
-   i_lrc       : in std_logic;
-   i_cpt_bits  : in std_logic_vector(6 downto 0);
- --  
-   o_bit_enable     : out std_logic ;  --
-   o_load_left      : out std_logic ;  --
-   o_load_right     : out std_logic ;  --
-   o_str_dat        : out std_logic ;  --  
-   o_cpt_bit_reset  : out std_logic   -- 
-   
+Port (
+i_bclk : in std_logic;
+i_switch : in std_logic;
+i_lrc : in std_logic;
+o_load_left : out std_logic ; --
+o_load_right : out std_logic ; --
+o_reset : out std_logic; --
+o_dat_strb: out std_logic
 );
 end mef_decod_i2s_v1b;
 
+
+
 architecture Behavioral of mef_decod_i2s_v1b is
 
-    signal   d_reclrc_prec  : std_logic ;  --
-    
+
+
+type State is (S0, S1, S2, S3, S4, S5);
+Signal s_current, s_next: State;
+
+
+
 begin
 
-   -- pour detecter transitions d_ac_reclrc
-   reglrc_I2S: process ( i_bclk)
-   begin
-   if i_bclk'event and (i_bclk = '1') then
-        d_reclrc_prec <= i_lrc;
-   end if;
-   end process;
-   
-  -- synch compteur codeur
-   rest_cpt: process (i_lrc, d_reclrc_prec, i_reset)
-      begin
-         o_cpt_bit_reset <= (d_reclrc_prec xor i_lrc) or i_reset;
-      end process;
-      
+process (i_bclk)
+begin
+if (rising_edge(i_bclk)) then
+s_current<=s_next;
+end if;
+end process;
 
-     -- decodage compteur avec case ...   
-        sig_ctrl_I2S:  process (i_cpt_bits, i_lrc )
-            begin
-                case i_cpt_bits is
-                 when "0000000" =>
-                     o_bit_enable     <= '1';
-                     o_load_left      <= '0';
-                     o_load_right     <= '0';
-                     o_str_dat        <= '0';
-                 when   "0000001"  |  "0000010"  |  "0000011"  |  "0000100"  
-                       |  "0000101"  |  "0000110"  |  "0000111"  |  "0001000" 
-                       |  "0001001"  |  "0001010"  |  "0001011"  |  "0001100" 
-                       |  "0001101"  |  "0001110"  |  "0001111"  |  "0010000"  
-                       |  "0010001"  |  "0010010"  |  "0010011"  |  "0010100" 
-                       |  "0010101"  |  "0010110"  |  "0010111"   
-                    =>
-                     o_bit_enable     <= '1';
-                     o_load_left      <= '0';
-                     o_load_right     <= '0';
-                     o_str_dat        <= '0';
-                 when   "0011000"  =>
-                     o_bit_enable     <= '0';
-                     o_load_left      <= not i_lrc;
-                     o_load_right     <=  i_lrc;
-                     o_str_dat        <= '0';
-                 when    "0011001"  =>
-                    o_bit_enable     <= '0';
-                    o_load_left     <= '0';
-                    o_load_right     <= '0';
-                    o_str_dat        <=  i_lrc;
-                 when  others  =>
-                    o_bit_enable     <= '0';
-                    o_load_left      <= '0';
-                    o_load_right     <= '0';
-                    o_str_dat        <= '0';
-                 end case;
-             end process;
+process(s_current, i_lrc, i_switch)
+begin
+case s_current is
+when S0 =>
+if (i_switch='1') then
+s_next<=S1;
+end if;
+s_next<=S0;
+when S1 =>
+s_next<=S2;
+when S2 =>
+if (i_lrc='1') then
+s_next<=S3;
+end if;
+s_next<=S2;
+when S3 =>
+if (i_switch='1') then
+s_next<=S4;
+end if;
+s_next<=S3;
+when S4 =>
+s_next<=S5;
+when S5 =>
+if (i_lrc='0') then
+s_next<=S0;
+end if;
+s_next<=S5;
+end case;
+end process;
 
-     end Behavioral;
+process(s_current)
+begin
+case s_current is
+when S0 =>
+o_reset<='0';
+o_dat_strb<='1';
+when S1 =>
+o_reset<='1';
+o_load_left<='1';
+when S2 =>
+o_load_left<='0';
+when S3 =>
+o_reset<='0';
+o_dat_strb<='0';
+when S4 =>
+o_reset<='1';
+o_load_right<='1';
+when S5 =>
+o_load_right<='0';
+end case;
+end process;
+
+
+
+end Behavioral;

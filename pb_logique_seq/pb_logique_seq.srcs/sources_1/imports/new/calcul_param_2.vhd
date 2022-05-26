@@ -51,7 +51,7 @@ architecture Behavioral of calcul_param_2 is
 -- Signaux
 ----------------------------------------------------------------------------------
  signal s_i_ech, s_i_ech2 : std_logic_vector (23 downto 0);
- signal s_i_ech3, s_i_ech4, s_i_ech5 : std_logic_vector (28 downto 0);
+ signal s_i_ech3, s_i_ech4, s_i_ech5, s_i_ech6 : std_logic_vector (28 downto 0);
  signal s_y_out29, s_o_param : std_logic_vector (7 downto 0);
  
  
@@ -81,6 +81,21 @@ Port (
       );
 end component;
 
+component Multipli_31over32 is
+  Port (
+         i_multi3132 : in std_logic_vector (28 downto 0);
+         o_multi3132 : out std_logic_vector (28 downto 0)
+       );
+end component;
+
+component Additionneur_M6 is
+  Port (    
+         input_add_1 : in std_logic_vector (28 downto 0);
+         input_add_2 : in std_logic_vector (28 downto 0);
+         output_add: out std_logic_vector (28 downto 0)
+       );
+end component;
+
 component Conv29to8bits is
 Port ( Xconv29 : in std_logic_vector (28 downto 0);
        Yconv7 : out std_logic_vector (7 downto 0)
@@ -105,13 +120,27 @@ Port map(
           Yconv29 => s_i_ech3
         );
 
+inst_add3132 : Additionneur_M6
+  Port map (    
+         input_add_1 => s_i_ech3,
+         input_add_2 => s_i_ech4,
+         output_add => s_i_ech5
+       );
+
+inst_multi : Multipli_31over32
+  Port Map (
+         i_multi3132 => s_i_ech6,
+         o_multi3132 => s_i_ech4
+       );
+
+
 inst_reg29bits : reg_29b
 Port map(
           i_clk => i_bclk,
           i_reset => i_reset,
           i_en => i_en,
-          i_dat => s_i_ech4,
-          o_dat => s_i_ech5
+          i_dat => s_i_ech5,
+          o_dat => s_i_ech6
         );
 
 inst_Conv29to8bits : Conv29to8bits
@@ -119,6 +148,9 @@ Port map(
           Xconv29 => s_i_ech3,
           Yconv7 => s_y_out29
         );
+        
+        
+
 ---------------------------------------------------------------------------------------------
 
 
@@ -126,13 +158,10 @@ process(i_reset, i_bclk)
 begin
 if (i_reset = '1')  then
     s_i_ech  <= "000000000000000000000000";
+    s_i_ech5 <= "00000000000000000000000000000";
 elsif rising_edge(i_bclk) then
     s_i_ech  <= i_ech;
 end if;
-
-
-
-
 
 --o_param <= x"02";    -- temporaire ...
 

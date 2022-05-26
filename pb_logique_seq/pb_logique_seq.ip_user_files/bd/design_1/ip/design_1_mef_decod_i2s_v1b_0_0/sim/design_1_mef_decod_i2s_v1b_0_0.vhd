@@ -56,14 +56,12 @@ USE ieee.numeric_std.ALL;
 ENTITY design_1_mef_decod_i2s_v1b_0_0 IS
   PORT (
     i_bclk : IN STD_LOGIC;
-    i_reset : IN STD_LOGIC;
+    i_switch : IN STD_LOGIC;
     i_lrc : IN STD_LOGIC;
-    i_cpt_bits : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
-    o_bit_enable : OUT STD_LOGIC;
     o_load_left : OUT STD_LOGIC;
     o_load_right : OUT STD_LOGIC;
-    o_str_dat : OUT STD_LOGIC;
-    o_cpt_bit_reset : OUT STD_LOGIC
+    o_reset : OUT STD_LOGIC;
+    o_dat_strb : OUT STD_LOGIC
   );
 END design_1_mef_decod_i2s_v1b_0_0;
 
@@ -73,35 +71,29 @@ ARCHITECTURE design_1_mef_decod_i2s_v1b_0_0_arch OF design_1_mef_decod_i2s_v1b_0
   COMPONENT mef_decod_i2s_v1b IS
     PORT (
       i_bclk : IN STD_LOGIC;
-      i_reset : IN STD_LOGIC;
+      i_switch : IN STD_LOGIC;
       i_lrc : IN STD_LOGIC;
-      i_cpt_bits : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
-      o_bit_enable : OUT STD_LOGIC;
       o_load_left : OUT STD_LOGIC;
       o_load_right : OUT STD_LOGIC;
-      o_str_dat : OUT STD_LOGIC;
-      o_cpt_bit_reset : OUT STD_LOGIC
+      o_reset : OUT STD_LOGIC;
+      o_dat_strb : OUT STD_LOGIC
     );
   END COMPONENT mef_decod_i2s_v1b;
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_1_mef_decod_i2s_v1b_0_0_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
-  ATTRIBUTE X_INTERFACE_PARAMETER OF o_cpt_bit_reset: SIGNAL IS "XIL_INTERFACENAME o_cpt_bit_reset, POLARITY ACTIVE_LOW, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF o_cpt_bit_reset: SIGNAL IS "xilinx.com:signal:reset:1.0 o_cpt_bit_reset RST";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF i_reset: SIGNAL IS "XIL_INTERFACENAME i_reset, POLARITY ACTIVE_LOW, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF i_reset: SIGNAL IS "xilinx.com:signal:reset:1.0 i_reset RST";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF o_reset: SIGNAL IS "XIL_INTERFACENAME o_reset, POLARITY ACTIVE_LOW, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF o_reset: SIGNAL IS "xilinx.com:signal:reset:1.0 o_reset RST";
 BEGIN
   U0 : mef_decod_i2s_v1b
     PORT MAP (
       i_bclk => i_bclk,
-      i_reset => i_reset,
+      i_switch => i_switch,
       i_lrc => i_lrc,
-      i_cpt_bits => i_cpt_bits,
-      o_bit_enable => o_bit_enable,
       o_load_left => o_load_left,
       o_load_right => o_load_right,
-      o_str_dat => o_str_dat,
-      o_cpt_bit_reset => o_cpt_bit_reset
+      o_reset => o_reset,
+      o_dat_strb => o_dat_strb
     );
 END design_1_mef_decod_i2s_v1b_0_0_arch;

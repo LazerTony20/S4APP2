@@ -285,7 +285,7 @@ end process;
         wait for 2 us;
         s_reset <= '0';
         s_btn <= "0000";
-        s_sw <= "0001";
+        s_sw <= "0000"; --switch la valeur entre 0et 1 pou passer de M5 a M6
         wait for 40 us;
                  
         WAIT; -- will wait forever
